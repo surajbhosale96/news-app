@@ -67,4 +67,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     borderRadius: 20,
   },
+  readMoreBtnContainer: {
+    paddingHorizontal: 30,
+  },
 });

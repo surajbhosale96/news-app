@@ -127,13 +127,15 @@ function News({route}) {
           <View style={NewsStyles.newsContent}>
             <Text style={NewsStyles.contentText}>{content}</Text>
           </View>
-          <TouchableOpacity
-            onPress={() => {
-              Linking.openURL(url);
-            }}
-            style={NewsStyles.readMoreBtn}>
-            <Text style={NewsStyles.readMoreText}>Read more</Text>
-          </TouchableOpacity>
+          <View style={NewsStyles.readMoreBtnContainer}>
+            <TouchableOpacity
+              onPress={() => {
+                Linking.openURL(url);
+              }}
+              style={NewsStyles.readMoreBtn}>
+              <Text style={NewsStyles.readMoreText}>Read more</Text>
+            </TouchableOpacity>
+          </View>
         </View>
       </ScrollView>
     </View>
